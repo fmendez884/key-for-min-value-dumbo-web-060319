@@ -7,6 +7,10 @@ def key_for_min_value(name_hash)
   elsif 
   name_hash.each do |key, value|
      value.each do |a, b|
-       
+       if a > b 
+         return a 
+       end 
+     end
+  end 
   end 
 end
